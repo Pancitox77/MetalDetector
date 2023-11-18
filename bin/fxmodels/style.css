@@ -1,0 +1,22 @@
+/* All */
+.list-view:hover {
+    -fx-background-color: aqua;
+}
+
+.toeditbtn:hover {
+    -fx-cursor: help;
+    -fx-color: greenyellow
+}
+
+/* Menu.fxml Style */
+.menubtn:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* NewC.fxml Style */
+#idNum {
+    -fx-background-color: greenyellow;
+    -fx-font-weight: bold;
+    -fx-font-size: 22;
+}
