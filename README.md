@@ -17,8 +17,9 @@ Los archivos ya vienen incluídos en la app, por lo que no es necesario instalar
 
 ## Ejecutar
 
-En una terminal, ejecutar el comando:
+En los repositorios del proyecto se incluye un archivo *MetalDetector.jar*. Este es una versión ya compilada y
+lista para usar. Solo debe ejecutar el comando:
 
-'''console
+```console
     java -jar MetalDetector.jar
-'''
+```
