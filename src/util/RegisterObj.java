@@ -4,7 +4,13 @@ import java.time.LocalDate;
 import java.util.Arrays;
 
 public class RegisterObj implements Serializable {
-    private String user,detector,object,material,description,place,hour;
+    private String user;
+    private String detector;
+    private String object;
+    private String material;
+    private String description;
+    private String place;
+    private String hour;
     private int id;
     private LocalDate date;
     private String[] imagesPath;

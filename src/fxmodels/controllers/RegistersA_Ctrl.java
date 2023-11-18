@@ -18,7 +18,9 @@ import util.RegisterObj;
 
 public class RegistersA_Ctrl implements Initializable {
     @FXML
-    private Button examineBtn, eraseBtn;
+    private Button examineBtn;
+    @FXML
+    private Button eraseBtn;
     @FXML
     private TableView<RegisterObj> registersTable;
     @FXML
@@ -33,8 +35,7 @@ public class RegistersA_Ctrl implements Initializable {
     private TableColumn<RegisterObj, String> detectorColumn;
 
     public void initialize(URL url, ResourceBundle resources) {
-        ArrayList<RegisterObj> items = new ArrayList<>();
-        items = Controllers.getSaver().getRegisters();
+        ArrayList<RegisterObj> items = Controllers.getSaver().getRegisters();
 
         if (!items.isEmpty()) {
             RegisterObj[] vals = new RegisterObj[items.size()];

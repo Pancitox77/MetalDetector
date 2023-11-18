@@ -24,6 +24,9 @@ public class Controllers {
     private static String nameEdit;
     private static String bodyText;
 
+    private Controllers(){
+    }
+
     /* Switch funcs */
     public static void switchTo(String resource, Event event) {
         try {

@@ -21,7 +21,11 @@ public class EditValues_Ctrl implements Initializable {
     @FXML
     private ListView<String> itemsList;
     @FXML
-    private Button btnAdd,btnEdit,btnErase;
+    private Button btnAdd;
+    @FXML
+    private Button btnEdit;
+    @FXML
+    private Button btnErase;
     private String fromResource;
 
 

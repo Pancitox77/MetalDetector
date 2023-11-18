@@ -31,6 +31,9 @@ public class NewB_Ctrl implements Initializable {
     private Spinner<Integer> idNum;
     private OptionSerializer option;
 
+    private static final String PLACES_KEY = "Lugares";
+    private static final String DETECTORS_KEY = "Detectores";
+
     public void initialize(URL location, ResourceBundle resources) {
         option = Controllers.getOption();
 
@@ -39,7 +42,7 @@ public class NewB_Ctrl implements Initializable {
         detectorsList.getItems().clear();
 
         // Default values
-        placesList.getItems().addAll(new String[] { "Parque", "Playa" });
+        placesList.getItems().addAll("Parque", "Playa");
         detectorsList.getItems().add("A simple vista");
         idNum.setValueFactory(
                 new SpinnerValueFactory.IntegerSpinnerValueFactory(
@@ -55,21 +58,21 @@ public class NewB_Ctrl implements Initializable {
         idNum.valueProperty().addListener(new IdListener());
 
         // Add items from file
-        placesList.getItems().addAll(option.getArray("Lugares"));
-        detectorsList.getItems().addAll(option.getArray("Detectores"));
+        placesList.getItems().addAll(option.getArray(PLACES_KEY));
+        detectorsList.getItems().addAll(option.getArray(DETECTORS_KEY));
         descriptionArea.setText(Controllers.getTempObj().getDescription());
     }
 
     /* Buttons funcs */
     public void editPlaces(MouseEvent ev) {
         if (ev.getButton() == MouseButton.SECONDARY) {
-            switchEdit(option.getArray("Lugares"), "Lugares", ev);
+            switchEdit(option.getArray(PLACES_KEY), PLACES_KEY, ev);
         }
     }
 
     public void editDetectors(MouseEvent ev) {
         if (ev.getButton() == MouseButton.SECONDARY) {
-            switchEdit(option.getArray("Detectores"), "Detectores", ev);
+            switchEdit(option.getArray(DETECTORS_KEY), DETECTORS_KEY, ev);
         }
     }
 

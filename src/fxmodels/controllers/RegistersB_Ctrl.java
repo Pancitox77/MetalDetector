@@ -34,7 +34,11 @@ public class RegistersB_Ctrl implements Initializable {
     @FXML
     private Label imagesLabel;
     @FXML
-    private ImageView img1, img2, img3;
+    private ImageView img1;
+    @FXML
+    private ImageView img2;
+    @FXML
+    private ImageView img3;
 
     public void initialize(URL url, ResourceBundle resources) {
         RegisterObj obj = Controllers.getRegisterObj();
