@@ -9,8 +9,8 @@
             "name": "App",
             "request": "launch",
             "mainClass": "main.App",
-            "projectName": "MetalDetector_f95f5d51",
-            "vmArgs": "--module-path /home/pancitox/Scripts/Librerias/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml"
+            // "projectName": "MetalDetector_f95f5d51",
+            "vmArgs": "--module-path /mnt/1798273C1E50646C/Media/Scripts/Librerias/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml"
         }
     ]
 }
